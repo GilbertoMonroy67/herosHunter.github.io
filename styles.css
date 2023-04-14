@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body{
+    font-family: 'Cinzel', serif;
+    background-image: linear-gradient(135deg,#E02401,#F78812, #AB6D23)
+}
+#seleccionar-heroe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 100px
+}
+.subtitulo{
+    color: black;
+    font-size: 40px;
+}
+.tarjetas, .tarjeta-de-ataques{
+    display: flex;
+    gap: 10px;
+}
+.tarjeta-de-heroes{
+    width: 210px;
+    height: 250px;
+    color: white;
+    background: #51050F;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px groove #F78812;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style:oblique;
+    size: 60px xx-large;
+    font-size: 30px;
+}
+.tarjeta-de-heroes img{
+    width: 100px;
+}
+.boton-de-seleccion{
+    width: 115px;
+    height: 30px;
+    color: black;
+    background: #AB6D23;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px groove goldenrod;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style:oblique;
+    size: 60px xx-large;
+    font-size: 20px;
+}
+.titulo-2{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.subtitulo-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+input{
+    display: none;
+}
+input:checked+label{
+    background-color: #E02401;
+}
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.botones-ataque{
+    background-color: #E02401;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+#mensajes{
+    width: 400px;
+    background: #FF5B00;
+    padding: 5px;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.boton-reiniciar{
+    border: transparent;
+    color: black;
+    background-color: #E02401;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-items: center;
+    align-content: center;
+}
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:640px){
+    .tarjetas, .tarjeta-de-ataques{
+        flex-direction: column;
+    }
+    .titulo-principal{
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

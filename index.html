@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>HEROS HUNTER</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section id="seleccionar-heroe">
+            <h1 class="titulo titulo-principal">⚔️HERO´S HUNTER⚔️</h1>
+       
+            <h2 class="subtitulo">Elige tu heroe:</h2>
+
+            <div class="tarjetas">
+                <input type="radio" name="mascota" id="Acke" /> 
+                <label class="tarjeta-de-heroes" for="Acke">
+                    <p>Acke</p>
+                    <img src="./imagen/6e0776d54698d264a3c39656fb723ac9.png" alt="Acke">
+                </label>
+    
+                <input type="radio" name="mascota" id="Aleksanteri" /> 
+                <label class="tarjeta-de-heroes" for="Aleksanteri">
+                    <p>Aleksanteri</p>
+                    <img src="./imagen/b9ba9e5d6f9a67ea508d1788e62afbd0.png" alt="Aleksanteri">
+                </label>
+                
+                <input type="radio" name="mascota" id="Bendt" />
+                <label class="tarjeta-de-heroes" for="Bendt">
+                    <p>Bendt</p>
+                    <img src="./imagen/cda720d6869bbed053b9d580e8a00a44.png" alt="Bendt">
+                </label>
+                  
+                <input type="radio" name="mascota" id="Borg" />
+                <label class="tarjeta-de-heroes" for="Borg">
+                    <p>Borg</p>
+                    <img src="./imagen/dwarf-5712059_960_720.png" alt="Borg">
+                </label>
+                
+            </div>
+            <button class="boton-de-seleccion" id="boton-seleccionar-heroe">Seleccionar</button>
+        </section>
+
+       <section id="seleccionar-ataque">
+            <h1 class="titulo-2">⚔️HERO´S HUNTER⚔️</h1>       
+            <h2 class="subtitulo-2">Elige tu ataque:</h2>
+
+            <div class="tarjeta-de-ataques">
+                <button id="boton-golpe" class="botones-ataque">GOLPE👊</button>
+                <button id="boton-espada" class="botones-ataque">ESPADA⚔️</button>
+                <button id="boton-magia" class="botones-ataque">MAGIA🧙‍♂️</button>
+                <button id="boton-escudo" class="botones-ataque">ESCUDO🛡️</button>
+            </div>
+
+            <div>
+                <div id="mensajes">
+                    <p id="resultado">¡QUE COMIENCE EL COMBATE!</p>
+
+                    <section id="reiniciar">
+                        <button class="boton-reiniciar" id="boton-reiniciar">Reiniciar</button>
+                   </section>
+                </div>
+         
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="heroe-seleccionado"></p>
+                    <p id="vida-jugador">5</p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="heroe-enemigo"></p>
+                    <p id="vida-enemigo">5</p>
+                    <div id="ataque-del-enemigo"></div>
+                </div>
+            </div>
+       </section>
+       <script src="./js/heros_hunter.js"></script>
+    </body>
+</html>
